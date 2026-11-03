@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário demonstrativo para inscrição em uma atividade temática sobre Minecraft.">
+    <title>Cadastro — Mundo Minecraft</title>
+</head>
+<body>
+    <a href="#conteudo">Pular para o conteúdo</a>
+    <header>
+        <p><strong>Mundo Minecraft</strong></p>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="dados.html">Dados</a></li>
+                <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <h1>Cadastro Minecraft</h1>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <p>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="[0-9]{10,11}" title="Digite 10 ou 11 números, incluindo o DDD, sem espaços ou símbolos.">
+                </p>
+
+                <p>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências no jogo</legend>
+
+                <p>Qual modo você prefere?</p>
+
+                <p>
+                    <input type="radio" id="sobrevivencia" name="modo" value="sobrevivencia" required>
+                    <label for="sobrevivencia">Sobrevivência</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="criativo" name="modo" value="criativo">
+                    <label for="criativo">Criativo</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="aventura" name="modo" value="aventura">
+                    <label for="aventura">Aventura</label>
+                </p>
+
+                <p>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="10" max="100" required>
+                </p>
+
+                <p>
+                    <label for="horas">Quantas horas por semana você joga?</label>
+                    <input type="number" id="horas" name="horas" min="0" max="168" step="0.5">
+                </p>
+
+                <p>
+                    <label for="plataforma">Plataforma em que joga:</label>
+                    <select id="plataforma" name="plataforma" required>
+                        <option value="">Selecione uma plataforma</option>
+                        <option value="computador">Computador</option>
+                        <option value="console">Console</option>
+                        <option value="celular">Celular ou tablet</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesses e confirmação</legend>
+
+                <p>Quais atividades interessam a você?</p>
+
+                <p>
+                    <input type="checkbox" id="construcao" name="interesses" value="construcao">
+                    <label for="construcao">Construção de estruturas</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="exploracao" name="interesses" value="exploracao">
+                    <label for="exploracao">Exploração de biomas</label>
+                </p>
+
+                <p>
+                    <label for="comentario">Conte o que gostaria de fazer na atividade (máximo de 300 caracteres):</label>
+                    <textarea id="comentario" name="comentario" rows="5" maxlength="300"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="termos" name="termos" value="aceito" required>
+                    <label for="termos">Confirmo que as informações são fictícias e aceito participar da atividade.</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Enviar cadastro</button>
+                <button type="reset">Limpar formulário</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por: Davi Antonio Albano — Turma: DS/M3/25 — 2026</p>
+    </footer>
+</body>
+</html>
