@@ -48,21 +48,10 @@ Foram utilizados recursos de acessibilidade em todas as páginas:
 
 O teste deve ser realizado utilizando a tecla `Tab` para navegar pelos links, campos e botões, e `Enter` ou a barra de espaço para ativar os elementos.
 
-**Resultado do teste:**--------
-
 ## Fontes consultadas
 
 - [Site oficial do Minecraft](https://www.minecraft.net/pt-br) — informações gerais sobre o jogo e suas atualizações.
 - [Minecraft Wiki](https://minecraft.wiki/) — informações sobre criaturas, blocos, biomas e mecânicas.
-
-## Imagens utilizadas e licenças
-
-As imagens ilustrativas foram criadas para este projeto.
-
-- **minecraft-mundo.svg:** ilustração vetorial de uma paisagem em blocos. Fonte: criação própria para o projeto.
-- **minecraft-blocos.svg:** ilustração vetorial de blocos inspirados nos elementos do jogo. Fonte: criação própria para o projeto.
-
-As imagens são ilustrações independentes e não são materiais oficiais da Mojang ou da Microsoft. Minecraft é uma marca de seus respectivos titulares.
 
 ## Tecnologias utilizadas
 
